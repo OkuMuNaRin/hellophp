@@ -1,20 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: admin
- * Date: 2017/12/19
- * Time: 10:05
- */
-
-if($_GET) {
-    require("class/hello.php");
-    $name="world";
-    if(isset($_GET['name'])){
-        $name=$_GET['name'];
-    }
-    $hello = new hello();
-    $hello->sayHello($name);
+require ("temp/head.php");
+require ("temp/bg.php");
+$page=new head();
+$page->title("My HomePage");
+$style=new bg();
+if($_REQUEST){
 
 }else{
-    echo "<form action='/' method='get'><input name='name' type='text'><input type='submit'></form>";
+
+require ("home/home.php");
+$home=new home();
+$home->LunBo();
+
+
 }
