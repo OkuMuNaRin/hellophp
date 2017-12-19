@@ -16,5 +16,5 @@ if($_GET) {
     $hello->sayHello($name);
 
 }else{
-    echo "<form action='index.php' method='get'><input name='name' type='text'><input type='submit'></form>";
+    echo "<form action='/' method='get'><input name='name' type='text'><input type='submit'></form>";
 }
