@@ -16,5 +16,5 @@ if($_SERVER['DOCUMENT_URI']=="/hellophp/") {
     $hello->sayHello($name);
 
 }else{
-    echo "<h1>无权访问</h1><a href='/'>返回首页</a>";
+    echo "<h1>无权访问</h1><a href='/hellophp/'>返回首页</a>";
 }
